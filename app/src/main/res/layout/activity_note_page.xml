@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_note_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ff33cc"
+
+    android:orientation="vertical"
+    tools:context="com.example.administrator.notebook.NotePage">
+    <RelativeLayout
+        android:background="#ff6699"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageButton
+            android:id="@+id/addImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/a2" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="120dp"
+
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="7dp"
+                android:text="标题:"
+                android:textColor="#cc99ff"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_TYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="7dp"
+                android:text="类别:"
+                android:textColor="#cc99ff"
+                android:textSize="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="180dp"
+
+
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/note_page_Title"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginBottom="6dp"
+                android:text="标题"
+                android:textColor="#cc99ff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/note_page_Type"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+
+               android:layout_weight="1"
+
+                android:layout_marginBottom="4dp"
+                android:text="类别"
+                android:textColor="#cc99ff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/note_page_time"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="时间"
+
+            android:textSize="15dp" />
+
+
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/edt_write"
+        android:hint="请输入您要记录的事情"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+<Button
+   android:layout_gravity="center"
+  android:layout_weight="1"
+
+    android:background="@drawable/bg"
+    android:text="保存"
+    android:id="@+id/btn_save"
+    android:layout_width="40dp"
+    android:layout_height="0dp" />
+</LinearLayout>

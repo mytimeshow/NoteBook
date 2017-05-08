@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.administrator.notebook.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00bc12">
+
+        <Button
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="#00bc12"
+            android:text="修改"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="记事本"
+            android:textSize="40dp" />
+
+        <ImageButton
+            android:id="@+id/searchView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/search" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="67dp"
+        android:layout_height="0dp"
+
+        android:layout_alignParentBottom="true"
+       android:layout_gravity="center"
+        android:layout_weight="2">
+
+        <ImageButton
+
+            android:id="@+id/AddNote"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:background="@drawable/bg"
+            android:gravity="bottom"
+            android:src="@mipmap/add"
+
+            />
+    </LinearLayout>
+</LinearLayout>

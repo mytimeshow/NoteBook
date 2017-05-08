@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.notebook.MainActivity">
+
+    <RelativeLayout
+        android:background="#ff6699"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageButton
+            android:layout_marginTop="4dp"
+            android:id="@+id/addImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/a2" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/change_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="标题"
+                android:textColor="#cc99ff"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/change_Type"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="类别"
+                android:textColor="#cc99ff"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#ff6699"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:background="#ff6699"
+                    android:id="@+id/star"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+
+                    android:src="@mipmap/star" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/change_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="时间"
+
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_weight="10"
+        android:id="@+id/change_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="输入您所要记录的事件" />
+
+<Button
+    android:background="#ff3300"
+    android:layout_gravity="center"
+    android:text="保存"
+    android:id="@+id/btn_save"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+</LinearLayout>
